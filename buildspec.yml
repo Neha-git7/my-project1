@@ -1,0 +1,14 @@
+yaml
+   version: 0.2
+   phases:
+     install:
+       commands:
+         - npm install          # installs node dependencies
+     build:
+       commands:
+         - npm run build        # builds the React app
+   artifacts:
+     files:
+       - '**/*'                 # include all files in output
+     base-directory: build       # output folder from the build
+
